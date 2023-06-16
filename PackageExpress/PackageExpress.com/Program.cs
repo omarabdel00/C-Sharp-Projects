@@ -28,14 +28,14 @@ namespace PackageExpress.com
             {
                 Console.WriteLine("Package too heavy to be shipped via Package Express. Have a good day.");
             }
-                else
-            
-                {
-                Console.WriteLine("Weight is acceptable, Thank you!.");
-                }
-            //if package weight is more than 50 then it will not be acceptable
+            else
 
             {
+                Console.WriteLine("Weight is acceptable, Thank you!.");
+
+                //if package weight is more than 50 then it will not be acceptable
+
+
                 Console.WriteLine("Please enter the package width:");
                 int width = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("package width is: " + width);
@@ -52,23 +52,23 @@ namespace PackageExpress.com
                 Console.WriteLine("Your estimated total for shipping this package is:");
                 Console.WriteLine(product);
                 Console.WriteLine("Thank you");
-           //this is to record the package weight, width, lenght & height 
+                //this is to record the package weight, width, lenght & height 
 
                 if ((length * width * height) > 50)
                 {
                     Console.WriteLine("Package too big to be shipped via Package Express.");
                 }
-           //if package dimention is more than 50 the package is not acceptale
+                //if package dimention is more than 50 the package is not acceptale
 
                 else
                 {
                     Console.WriteLine("Package is acceptable, Thank you!.");
                 }
-            }   
 
 
 
 
+            } 
 
 
         }
